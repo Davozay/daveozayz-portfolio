@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 
 const variantses = {
   initial: {
-    x:-100,
+    x: -100,
     opacity: 0
   },
   animate: {
@@ -31,7 +31,7 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <motion.div  variants={variantses} initial="initial" whileInView="animate" className="max-w-5xl mx-auto px-4">
+        <motion.div variants={variantses} initial="initial" whileInView="animate" className="max-w-5xl mx-auto px-4">
           <motion.h2 variants={variantses} className="text-3xl font-bold mb-8 bg-gradient-to-r  from-red-900 to-red-200 bg-clip-text text-transparent text-center">
             {" "}
             Featured Projects
@@ -138,7 +138,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
+            {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
               <h3 className=" text-xl font-bold mb-2">Bon-App-Etit</h3>
               <p className="text-gray-400 mb-4">
                 A campus-focused food delivery web application developed for
@@ -157,7 +157,7 @@ export const Projects = () => {
                     </span>
                   )
                 )}
-              </div>
+              </div> */}
 
               {/* one */}
               <div className="flex justify-between items-center">
