@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@500&family=Roboto:ital@0;1&family=Space+Grotesk&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@500&family=Roboto:ital@0;1&family=Space+Grotesk&display=swap');
+
+
+:root {
+  --text-colors: rgba(128,0,40);
+  --Primary-bg-color: #0a0a0a;
+  --Primary-text-color: #f3f4f6;
+  --loading-bg-color: rgba(33, 33, 37, .8);
+  --menu-x-color: rgba(33, 33, 37, .8);
+  --color-nav-color: linear-gradient(to right, #330000, #ffffff);
+--bling-anime:  1s ease-in-out infinite alternate breathe;
+}
+
+/* 
+body{
+  scroll-snap-align: center;
+}
+html{
+  scroll-snap-type:  mandatory;
+  scroll-behavior: smooth;
+} */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Serif;
+  background: var(--Primary-bg-color);
+  /* #0a0a0a; */
+  color: var(--Primary-text-color);
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+@layer utilities {
+
+  @keyframes loading {
+    /* 0%{
+      width: 20px;
+      margin-left: 0px;
+      background: red;
+      }
+  100%{
+      
+      width: 50px;
+      margin-left: 100px;
+      background: rgb(2, 0, 128);
+      } */
+
+
+    0% {
+
+
+      transform: translateX(-100%);
+    }
+
+    100% {
+
+      transform: translateX(250%);
+    }
+
+
+  }
+
+  .animate-loading-bar {
+
+    animation: loading 0.8s ease infinite;
+  }
+
+
+
+
+
+  @keyframes blink {
+
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+
+  }
+
+  .animate-blink {
+
+    animation: blink 0.8s infinite step-end;
+  }
+}
+
+
+
+
+.reveal{
+  opacity:0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes breathe {
+  from {
+    transform: scale(1);
+    /* background-color: rgb(94, 50, 74); */
+  }
+  to {
+    transform: scale(1.2);
+    opacity:1;
+    /* background-color: rgb(89, 0, 255); */
+  }
+}
+
+#jumper {
+ animation: var(--bling-anime);
+    opacity: .1;
+}
+
+
+/* .contacting{
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;align-items: center;
+  justify-content: space-between;
+} */
+
+.phoneSvg{
+ 
+ stroke: red;
+}
