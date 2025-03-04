@@ -34,7 +34,7 @@ export const Home = () => {
           alt="Christian Icon"
           className="w-full rounded-full z-1"
         />
-        <i className="ri-sun-line text-yellow-400 text-2xl absolute top-2 right-2 hover:cursor-pointer"></i>
+       
       </div>
 
       {/* Text Content */}

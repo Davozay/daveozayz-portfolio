@@ -65,7 +65,7 @@ export const Projects = () => {
               <div className="flex justify-between items-center">
                 <a
                   href="https://krschoolofthespirit.netlify.app"
-                  target="blank"
+                  target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
                   View Live Demo =&gt;
@@ -81,6 +81,7 @@ export const Projects = () => {
               <div className="flex justify-between items-center">
                 <a
                   href="https://github.com/Davozay/krschool"
+                  target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
                   View Git hub =&gt;{" "}
@@ -115,7 +116,7 @@ export const Projects = () => {
               <div className="flex justify-between items-center">
                 <a
                   href="https://krschoolofthespirit.netlify.app"
-                  target="blank"
+                  target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
                   View Live Demo =&gt;
@@ -179,6 +180,7 @@ export const Projects = () => {
               <div className="flex justify-between items-center">
                 <a
                   href="https://github.com/Davozay/Bon-AppEtit-Repo"
+                  target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
                   View Git hub =&gt;{" "}
