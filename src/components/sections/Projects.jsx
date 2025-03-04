@@ -2,6 +2,7 @@ import spiritschool from "../../assets/screen1.png";
 import bonapp from "../../assets/screen2.png";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "motion/react"
+import todo from "../../assets/todo.webp"
 
 
 
@@ -115,7 +116,7 @@ export const Projects = () => {
               {/* one */}
               <div className="flex justify-between items-center">
                 <a
-                  href="https://krschoolofthespirit.netlify.app"
+                  href="#"
                   target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
@@ -133,6 +134,7 @@ export const Projects = () => {
                 <a
                   href="https://github.com/Davozay/Bon-AppEtit-Repo"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  target="_blank"
                 >
                   View Git hub =&gt;{" "}
                   <i id="jumper" className=" ri-github-line "></i>
@@ -142,10 +144,7 @@ export const Projects = () => {
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
               <h3 className=" text-xl font-bold mb-2">Bon-App-Etit</h3>
               <p className="text-gray-400 mb-4">
-                A campus-focused food delivery web application developed for
-                Lincoln University in Abuja, Nigeria. The platform enables
-                students and staff to order meals, snacks, and other food items
-                from local vendors conveniently.
+               
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
                 {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map(
@@ -163,13 +162,13 @@ export const Projects = () => {
               {/* one */}
               <div className="flex justify-between items-center">
                 <a
-                  href="https://krschoolofthespirit.netlify.app"
-                  target="blank"
+                  href="https://todoappiu3.netlify.app"
+                  target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >
                   View Live Demo =&gt;
                   <img
-                    src={bonapp}
+                    src={todo}
                     alt=""
                     className="w-[100%] py-3 rounded-3xl"
                   />
@@ -179,7 +178,7 @@ export const Projects = () => {
               {/* two */}
               <div className="flex justify-between items-center">
                 <a
-                  href="https://github.com/Davozay/Bon-AppEtit-Repo"
+                  href="https://github.com/Davozay/Gamified-To-Do-List-App"
                   target="_blank"
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                 >

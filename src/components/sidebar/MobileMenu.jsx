@@ -25,7 +25,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#home"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        className={`sm:hover:text-red-500/50 hover:scale-150 text-2xl font-semibold text-white my-4 transform transition-transform duration-300
      
      ${menuOpen ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-5"}
     `}
@@ -35,7 +35,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        className={`sm:hover:text-red-500/50 hover:scale-150 text-2xl font-semibold text-white my-4 transform transition-transform duration-300
      
           ${menuOpen ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-5"}
          `}
@@ -45,7 +45,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#projects"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        className={`sm:hover:text-red-500/50 hover:scale-150 text-2xl font-semibold text-white my-4 transform transition-transform duration-300
      
           ${menuOpen ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-5"}
          `}
@@ -55,7 +55,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        className={`sm:hover:text-red-500/50 hover:scale-150 text-2xl font-semibold text-white my-4 transform transition-transform duration-300
      
           ${menuOpen ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-5"}
          `}
@@ -65,48 +65,4 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     </div>
   );
 };
-
-// import { useState } from "react";
-// import { motion } from "motion/react";
-
-// import { useEffect } from "react"
-// import "../../App.css";
-
-// import { ToggleButton } from "./toggleButton/ToggleButton"
-// import { delay } from "motion";
-// import { clipPath } from "motion/react-m";
-
-// export const Sidebar = (menuOpens) => {
-
-//   const [menuOpen, setMenuOpen] = useState(false);
-//   const variants ={
-//     open:{
-//         clipPath: "circle(1200px at 50px 50px)",
-//         transition:{
-//             type:"spring",
-//             stiffness:20,
-//         },
-//     },
-//     closed: {
-//         clipPath: "circle(360 at 50px 50px)",
-//         transition:{
-//             delay:0.5,
-
-//             type:"string",
-//             stiffness:400,
-//             damping:40,
-
-//         },
-//     },
-//   };
-
-//   return <motion.div className="side-bar"animate={open? "open": "closed"}>
-
-//         <motion.div className="bground" variants={variants}>
-//             {/* <Links /> */}
-//             </motion.div>
-
-//       <ToggleButton setMenuOpen={setMenuOpen}/>
-//     </motion.div>
-
-// };
+ 

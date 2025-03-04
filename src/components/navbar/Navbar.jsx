@@ -36,7 +36,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="link py-1 relative text-gray-300 hover:text-white transition-colors sm:hover:text-amber-300"
+              className="link py-1 relative text-gray-300 hover:text-white transition-colors "
             >
               Home
             </a>
