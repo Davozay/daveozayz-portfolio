@@ -136,7 +136,7 @@ export const Projects = () => {
                   className="text-red-400 hover:text-red-300 transition-colors my-4"
                   target="_blank"
                 >
-                  View Git hub =&gt;{" "}
+                  View Git hub =&gt;{"  "}
                   <i id="jumper" className=" ri-github-line "></i>
                 </a>
               </div>
