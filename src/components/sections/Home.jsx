@@ -21,6 +21,8 @@ const textVariants = {
 
 
 export const Home = () => {
+  const tryn = ' Let\'s';
+
   return (
     <section
       id="home"
@@ -57,7 +59,7 @@ export const Home = () => {
           A front-end developer and creative thinker passionate about blending
           aesthetics with functionality. I craft engaging, user-friendly
           experiences and bring ideas to life with innovation and precision.
-          Let&apos;s build something amazing together!
+          {tryn} build something amazing together!
         </p>
         
 
