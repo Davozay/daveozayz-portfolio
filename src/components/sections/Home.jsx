@@ -30,11 +30,11 @@ export const Home = () => {
     >
       <br />
       {/* Profile Image */}
-      <div className="relative rounded-full w-[150px] md:w-[225px] lg:w-[450px]  border-none p-2 shadow-lg hover:shadow-red-900 ">
+      <div className="relative rounded-full  w-[150px] md:w-[225px] lg:w-[450px]  border-none p-2 shadow-lg hover:shadow-red-900 ">
         <img
           src={christian}
           alt="Christian Icon"
-          className="w-full rounded-full z-1"
+          className="w-full rounded-full z-1 "
         />
        
       </div>

@@ -142,7 +142,7 @@ export const Projects = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
-              <h3 className=" text-xl font-bold mb-2">Bon-App-Etit</h3>
+              <h3 className=" text-xl font-bold mb-2">To-Do List App</h3>
               <p className="text-gray-400 mb-4">
                
               </p>

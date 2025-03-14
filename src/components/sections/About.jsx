@@ -19,13 +19,14 @@ const variantssas = {
 export const About = () => {
   const skills = {
     "Frontend Development": {
-      Languages: ["HTML5", "CSS3", "JavaScript", "PHP"],
+      Languages: ["HTML5", "CSS3", "JavaScript"],
       Frameworks: ["React.js", "Tailwind CSS", "Laravel"],
       Tools: ["Vite", "Webpack", "npm"],
     },
     "Backend Development": {
-      Technologies: ["Node.js", "Express.js"],
-      Databases: ["MongoDB", "MySQL"],
+      Languages: ["Node.js", "PHP", "Python"], 
+    Frameworks: ["Express.js", "Django"], 
+    Databases: ["MongoDB", "MySQL"],
       Security: ["JWT Authentication", "bcrypt hashing", "Protected Routes"],
     },
     DevOps: {
