@@ -145,7 +145,7 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4 ">
                 🏢{" "}
                 <span className="bg-gradient-to-r  from-red-900 to-red-200 bg-clip-text text-transparent">
-                  Work Experince
+                  Work Experience
                 </span>{" "}
               </h3>
 

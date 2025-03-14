@@ -40,7 +40,7 @@ export const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
               <h3 className=" text-xl font-bold mb-2">
-                Kingdom SChool of The Spirit Web App
+                Kingdom School of The Spirit Web App
               </h3>
               <p className="text-gray-400 mb-4">
                 A modern, one-page website for Kingdom Rescue School of the
