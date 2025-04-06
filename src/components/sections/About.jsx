@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const variantssas = {
   initial: {
-    y:100,
+    y: 100,
     opacity: 0
   },
   animate: {
@@ -17,6 +17,7 @@ const variantssas = {
 };
 
 export const About = () => {
+  const iAM = 'I\'m'
   const skills = {
     "Frontend Development": {
       Languages: ["HTML5", "CSS3", "JavaScript"],
@@ -24,10 +25,17 @@ export const About = () => {
       Tools: ["Vite", "Webpack", "npm"],
     },
     "Backend Development": {
-      Languages: ["Node.js", "PHP", "Python"], 
-    Frameworks: ["Express.js", "Django"], 
-    Databases: ["MongoDB", "MySQL"],
+      Languages: ["Node.js", "PHP", "Python"],
+      Frameworks: ["Express.js", "Django"],
+      Databases: ["MongoDB", "MySQL"],
       Security: ["JWT Authentication", "bcrypt hashing", "Protected Routes"],
+
+    },
+    "AI / Machine Learning": {
+      Languages: ["Python"],
+      Libraries: ["TensorFlow", "PyTorch", "scikit-learn"],
+      Tools: ["Jupyter Notebook", "Google Colab"],
+      Concepts: ["Neural Networks", "Natural Language Processing", "Computer Vision", "Model Training & Evaluation"]
     },
     DevOps: {
       "Version Control": ["Git", "GitHub"],
@@ -42,20 +50,24 @@ export const About = () => {
     >
       <RevealOnScroll>
         <motion.div className="max-w-3xl  mx-auto px-4"
-         variants={variantssas} initial="initial" whileInView="animate"
-        
+          variants={variantssas} initial="initial" whileInView="animate"
+
         >
           <h2 className=" text-3xl font-bold mb-8 bg-gradient-to-r from-red-900 to-red-200 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
           <p className="text-gray-300 mb-6 text-center">
-            I&apos;m passionate about crafting stunning designs, solving
-            challenges, and bringing ideas to life. Whether coding, refining
-            concepts, or enhancing user experiences, I thrive on creativity.
-            Beyond tech, I express my artistry through dance, beatboxing, and
-            sketching—because creativity knows no limits.
+            I am a full-stack developer
+            passionate about crafting stunning designs,
+            solving real-world challenges,
+            and bringing bold ideas to life.
+            Whether {iAM} coding, refining concepts, or enhancing user experiences,
+             I thrive on creativity and precision. 
+             Beyond tech, I express my artistry through dance, 
+             beatboxing, and sketching—because creativity has no boundaries.
           </p>
+
           <br />
           <div
             className="top-80 sliderText absolute text-[10vh] sm:left-[300px] lg:left-[46rem] bottom-32 whitespace-nowrap text-[#ffffff09] w-[25%] z-[-1] "

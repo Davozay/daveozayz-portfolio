@@ -36,12 +36,12 @@ export const Home = () => {
           alt="Christian Icon"
           className="w-full rounded-full z-1 "
         />
-       
+
       </div>
 
       {/* Text Content */}
-      
-     
+
+
       <motion.div
         initial="initial"
         animate="animate"
@@ -56,12 +56,11 @@ export const Home = () => {
         </motion.h1>
 
         <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-          A front-end developer and creative thinker passionate about blending
-          aesthetics with functionality. I craft engaging, user-friendly
-          experiences and bring ideas to life with innovation and precision.
+          A full-stack developer and creative thinker passionate about blending aesthetics with functionality.
+           I build seamless, scalable solutions from front to back, crafting engaging user experiences with precision and innovation.
           {tryn} build something amazing together!
         </p>
-        
+
 
         <motion.div
           className="flex justify-center md:justify-start space-x-4"
@@ -84,9 +83,9 @@ hover:shadow-[0_0_15px_rgba(128,20,40,0.2)] hover:bg-red-600/30 hover:text-white
             Contact Me
           </motion.a>
         </motion.div>
-        
+
       </motion.div>
-     
+
     </section>
   );
 };
