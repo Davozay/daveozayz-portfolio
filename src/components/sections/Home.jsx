@@ -1,7 +1,9 @@
 // import { animate, stagger } from "motion";
+// eslint-disable-next-line no-unused-vars
 import { delay } from "motion";
 import christian from "../../assets/mainShock.jpg";
 import { motion } from "motion/react";
+import Button from "../Button";
 
 const textVariants = {
   initial: {
@@ -22,6 +24,7 @@ const textVariants = {
 
 export const Home = () => {
   const tryn = ' Let\'s';
+  const hyph ="'"
 
   return (
     <section
@@ -52,7 +55,7 @@ export const Home = () => {
           variants={textVariants}
           className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-red-900 to-red-200 bg-clip-text text-transparent animate-fade-in"
         >
-          Hey, I&apos;m David Ayozie
+          Hey, I{hyph}m David Ayozie
         </motion.h1>
 
         <p className="text-gray-300 text-lg mb-8 leading-relaxed">
@@ -68,17 +71,18 @@ export const Home = () => {
         >
           <motion.a
             variants={textVariants}
-            href="#projects"
-            className="bg-red-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
-hover:shadow-[0_0_15px_rgba(128,20,40,0.8)] "
+            href=""
+//             className="bg-red-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
+// hover:shadow-[0_0_15px_rgba(128,20,40,0.8)] "
           >
-            View Projects
+            <Button />
+            
           </motion.a>
           <motion.a
             variants={textVariants}
             href="#contact"
-            className="border border-red-500/50 text-red-500 py-3 px-6 overflow-hidden rounded font-medium transition-all duration-100 hover:translate-y-0.5 
-hover:shadow-[0_0_15px_rgba(128,20,40,0.2)] hover:bg-red-600/30 hover:text-white"
+            className="h-[50px] border border-red-500/50 text-red-500 py-3 px-6 overflow-hidden rounded font-medium transition-all duration-100 hover:translate-y-0.5 
+hover:shadow-[0_0_15px_rgba(128,20,40,0.2)] hover:bg-red-600/30 hover:text-white "
           >
             Contact Me
           </motion.a>

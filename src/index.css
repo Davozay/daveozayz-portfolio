@@ -240,3 +240,37 @@ li {
   bottom: 20px;
   animation: anime 3s linear infinite;
 }
+
+.btn {
+  background-color: rgba(129, 13, 34, 0.8);
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 50px;
+}
+
+.btn span {
+  top: -7px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(206, 18, 52, 0.8);
+  width: var(--width, 0px);
+  /* Default to 0px if not set */
+  height: var(--height, 0px);
+  /* Default to 0px if not set */
+  left: var(--xPos, 0px);
+  top: var(--yPos, 0px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s ease-out, height 0.5s ease-out;
+}
