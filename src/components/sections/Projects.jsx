@@ -3,6 +3,7 @@ import bonapp from "../../assets/screen2.png";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "motion/react"
 import todo from "../../assets/todo.webp"
+import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 
 
 
@@ -38,6 +39,24 @@ export const Projects = () => {
             Featured Projects
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            
+             <div className="sticky top-0 p-4 z-50">
+                      <a
+                        href="#about"
+                        className=" md:left-[394px]
+                                 md:bottom-8 lg:left-[52.5rem]
+                                  lg:bottom-14
+                                   left-5 absolute cursor-pointer angle-down z-11" >
+                        <FaAnglesDown className="text-xl" />
+          
+          
+          
+          
+                      </a>
+          
+          
+                    </div>
+            
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
               <h3 className=" text-xl font-bold mb-2">
                 Kingdom School of The Spirit Web App
@@ -187,7 +206,24 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+             <div className="sticky top-0 p-4 z-50">
+                      <a
+                        href="#about"
+                        className=" md:left-[394px]
+                                 md:bottom-8 lg:left-[52.5rem]
+                                  lg:bottom-14
+                                   left-5 absolute cursor-pointer angle-down z-11" >
+                        <FaAnglesUp className="text-xl" />
+          
+          
+          
+          
+                      </a>
+          
+          
+                    </div>
           </div>
+          
         </motion.div>
       </RevealOnScroll>
     </section>

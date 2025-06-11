@@ -1,5 +1,7 @@
 // import { Sidebar } from "../sidebar/Sidebar";
 
+import {  TiTimes, TiTimesOutline } from "react-icons/ti";
+
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
@@ -19,7 +21,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         className="absolute top-4 right-7 text-white text-3xl focus:outline-none cursor-pointer"
         aria-label="Close Menu"
       >
-        &times;
+        <TiTimes className="text-4xl absolute -left-6 border-0"/>
       </button>
 
       <a

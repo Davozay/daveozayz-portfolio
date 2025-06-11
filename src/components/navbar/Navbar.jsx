@@ -1,6 +1,8 @@
 // import { Sidebar } from "../sidebar/Sidebar";
+// import { TbBurger } from "react-icons/tb";
 import "../../App.css"
 import { useEffect } from "react";
+import {  HiMiniBars3BottomRight, HiOutlineBars3BottomRight } from "react-icons/hi2";
 
 
 
@@ -25,7 +27,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
 
              
         <div className="afterina w-7 h-5  relative cursor-pointer z-40 md:hidden " onClick={()=> setMenuOpen((prev)=>!prev)}>
-            &#9776;
+            <HiMiniBars3BottomRight className="text-2xl"/>
           </div>
           
 

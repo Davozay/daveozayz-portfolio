@@ -274,3 +274,21 @@ li {
   border-radius: 50%;
   transition: width 0.5s ease-out, height 0.5s ease-out;
 }
+
+.angle-down{
+  animation: pointdown  1000ms infinite alternate-reverse;
+  
+
+}
+
+@keyframes pointdown {
+  0%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  
+}

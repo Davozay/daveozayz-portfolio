@@ -1,3 +1,4 @@
+import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "motion/react";
 
@@ -46,16 +47,40 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20 bg-gray-800"
+      className="min-h-screen flex items-center justify-center py-20 bg-gray-800 sticky"
     >
       <RevealOnScroll>
         <motion.div className="max-w-3xl  mx-auto px-4"
           variants={variantssas} initial="initial" whileInView="animate"
 
         >
+
+          <div className="sticky top-0 p-4 z-50">
+
+
+
+
+
+            <a
+              href="#projects"
+              className=" md:left-[394px]
+         md:bottom-8 lg:left-[52.5rem]
+          lg:bottom-14
+           left-5 absolute cursor-pointer angle-down z-11" >
+              <FaAnglesDown className="text-xl mt-10" />
+
+
+            </a>
+
+
+
+          </div>
+
+
           <h2 className=" text-3xl font-bold mb-8 bg-gradient-to-r from-red-900 to-red-200 bg-clip-text text-transparent text-center">
             About Me
           </h2>
+
 
           <p className="text-gray-300 mb-6 text-center">
             I am a full-stack developer
@@ -63,9 +88,9 @@ export const About = () => {
             solving real-world challenges,
             and bringing bold ideas to life.
             Whether {iAM} coding, refining concepts, or enhancing user experiences,
-             I thrive on creativity and precision. 
-             Beyond tech, I express my artistry through dance, 
-             beatboxing, and sketching—because creativity has no boundaries.
+            I thrive on creativity and precision.
+            Beyond tech, I express my artistry through dance,
+            beatboxing, and sketching—because creativity has no boundaries.
           </p>
 
           <br />
@@ -198,7 +223,25 @@ export const About = () => {
                 </ul>
               </div> */}
               </div>
+
             </div>
+
+          </div>
+          <div className="sticky top-0 p-4 z-50">
+            <a
+              href="#home"
+              className=" md:left-[394px]
+                       md:bottom-8 lg:left-[52.5rem]
+                        lg:bottom-14
+                         left-5 absolute cursor-pointer angle-down z-11" >
+              <FaAnglesUp className="text-xl" />
+
+
+
+
+            </a>
+
+
           </div>
         </motion.div>
       </RevealOnScroll>
