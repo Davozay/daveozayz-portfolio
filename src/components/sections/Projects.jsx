@@ -1,5 +1,4 @@
 import spiritschool from "../../assets/screen1.png";
-import bonapp from "../../assets/screen2.png";
 import todo from "../../assets/todo.webp";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "framer-motion";
@@ -21,7 +20,7 @@ const variantses = {
 };
 
 export const Projects = () => {
-  const appos ="\'"
+  const appos ="/'"
   return (
     <section
       id="projects"
@@ -101,7 +100,7 @@ export const Projects = () => {
 
             {/* Project 2 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Bon-App-Etit</h3>
+              <h3 className="text-xl font-bold mb-2">Bible-Quiz Web App</h3>
               <p className="text-gray-400 mb-4">
                 This is a Bible Quiz Web Application that tests your knowledge about God{appos}s Word and helps you know more things about the Bible, and how God concealed great mysteries in His Word.
               </p>
