@@ -2,7 +2,7 @@
 // import { TbBurger } from "react-icons/tb";
 import "../../App.css"
 import { useEffect } from "react";
-import {  HiMiniBars3BottomRight, HiOutlineBars3BottomRight } from "react-icons/hi2";
+import {  HiMiniBars3BottomRight} from "react-icons/hi2";
 
 
 

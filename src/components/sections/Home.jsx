@@ -4,8 +4,6 @@ import { delay } from "motion";
 import christian from "../../assets/mainShock.jpg";
 import { motion } from "motion/react";
 import Button from "../Button";
-// import { FaAngleDoubleDown } from "react-icons/fa";
-import { FaAnglesDown } from "react-icons/fa6";
 
 const textVariants = {
   initial: {
@@ -43,7 +41,6 @@ export const Home = () => {
          md:bottom-8 lg:left-[52.5rem]
           lg:bottom-14
            left-5 absolute cursor-pointer angle-down z-11" >
-        <FaAnglesDown className="text-xl" />
         {/* <span className="
              bottom-full 
              left-1/2 transform

@@ -1,4 +1,3 @@
-import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "motion/react";
 
@@ -67,7 +66,6 @@ export const About = () => {
          md:bottom-8 lg:left-[52.5rem]
           lg:bottom-14
            left-5 absolute cursor-pointer angle-down z-11" >
-              <FaAnglesDown className="text-xl mt-10" />
 
 
             </a>
@@ -234,7 +232,6 @@ export const About = () => {
                        md:bottom-8 lg:left-[52.5rem]
                         lg:bottom-14
                          left-5 absolute cursor-pointer angle-down z-11" >
-              <FaAnglesUp className="text-xl" />
 
 
 

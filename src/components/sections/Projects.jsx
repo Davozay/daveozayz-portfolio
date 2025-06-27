@@ -1,16 +1,14 @@
 import spiritschool from "../../assets/screen1.png";
 import bonapp from "../../assets/screen2.png";
+import todo from "../../assets/todo.webp";
 import { RevealOnScroll } from "../RevealOnScroll";
-import { motion } from "motion/react"
-import todo from "../../assets/todo.webp"
-import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
-
-
+import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa6";
 
 const variantses = {
   initial: {
     x: -100,
-    opacity: 0
+    opacity: 0,
   },
   animate: {
     x: 0,
@@ -22,10 +20,6 @@ const variantses = {
   },
 };
 
-
-
-
-
 export const Projects = () => {
   return (
     <section
@@ -33,197 +27,176 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <motion.div variants={variantses} initial="initial" whileInView="animate" className="max-w-5xl mx-auto px-4">
-          <motion.h2 variants={variantses} className="text-3xl font-bold mb-8 bg-gradient-to-r  from-red-900 to-red-200 bg-clip-text text-transparent text-center">
-            {" "}
+        <motion.div
+          variants={variantses}
+          initial="initial"
+          whileInView="animate"
+          className="max-w-5xl mx-auto px-4"
+        >
+          {/* Up Arrow */}
+          <div className="sticky top-0 z-50 p-4">
+            <a
+              href="#about"
+              className="absolute left-5 md:left-[394px] lg:left-[52.5rem] bottom-8 cursor-pointer z-10"
+            >
+            </a>
+          </div>
+
+          <motion.h2
+            variants={variantses}
+            className="text-3xl font-bold mb-8 bg-gradient-to-r from-red-900 to-red-200 bg-clip-text text-transparent text-center"
+          >
             Featured Projects
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-            
-             <div className="sticky top-0 p-4 z-50">
-                      <a
-                        href="#about"
-                        className=" md:left-[394px]
-                                 md:bottom-8 lg:left-[52.5rem]
-                                  lg:bottom-14
-                                   left-5 absolute cursor-pointer angle-down z-11" >
-                        <FaAnglesDown className="text-xl" />
-          
-          
-          
-          
-                      </a>
-          
-          
-                    </div>
-            
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
-              <h3 className=" text-xl font-bold mb-2">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Project 1 */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">
                 Kingdom School of The Spirit Web App
               </h3>
               <p className="text-gray-400 mb-4">
-                A modern, one-page website for Kingdom Rescue School of the
-                Spirit, showcasing the school&apos;s mission, courses, and
-                instructor while providing a seamless registration experience
-                through a Google Form. Designed with elegance and simplicity
-                using HTML, TailwindCSS, and JavaScript.
+                A modern one-page website for Kingdom Rescue School of the
+                Spirit, showcasing the mission, courses, and instructor with a
+                seamless registration experience via Google Form. Built using
+                HTML, TailwindCSS, and JavaScript.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map(
-                  (item, i) => (
-                    <span
-                      key={i}
-                      className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map((item, i) => (
+                  <span
+                    key={i}
+                    className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
-
-              {/* one */}
               <div className="flex justify-between items-center">
                 <a
                   href="https://krschoolofthespirit.netlify.app"
                   target="_blank"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 w-full"
                 >
                   View Live Demo =&gt;
                   <img
                     src={spiritschool}
-                    alt=""
-                    className="w-[100%] py-3 rounded-3xl"
+                    alt="Kingdom School Project"
+                    className="w-full py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               </div>
-
-              {/* two */}
               <div className="flex justify-between items-center">
                 <a
                   href="https://github.com/Davozay/krschool"
                   target="_blank"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"
                 >
-                  View Git hub =&gt;{" "}
-                  <i id="jumper" className="ri-github-line"></i>
+                  View GitHub =&gt; <FaGithub className="ml-2" />
                 </a>
               </div>
             </div>
 
-            {/*Another */}
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
-              <h3 className=" text-xl font-bold mb-2">Bon-App-Etit</h3>
+            {/* Project 2 */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Bon-App-Etit</h3>
               <p className="text-gray-400 mb-4">
-                A campus-focused food delivery web application developed for
-                Lincoln University in Abuja, Nigeria. The platform enables
-                students and staff to order meals, snacks, and other food items
-                from local vendors conveniently.
+                A campus-focused food delivery web app developed for Lincoln
+                University, Abuja. Enables students and staff to conveniently
+                order meals and snacks from local vendors.
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
-                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map(
-                  (item, i) => (
-                    <span
-                      key={i}
-                      className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map((item, i) => (
+                  <span
+                    key={i}
+                    className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
-
-              {/* one */}
               <div className="flex justify-between items-center">
                 <a
                   href="#"
                   target="_blank"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 w-full"
                 >
                   View Live Demo =&gt;
                   <img
                     src={bonapp}
-                    alt=""
-                    className="w-[100%] py-3 rounded-3xl"
+                    alt="Bon-App-Etit"
+                    className="w-full py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               </div>
-
-              {/* two */}
               <div className="flex justify-between items-center">
                 <a
                   href="https://github.com/Davozay/Bon-AppEtit-Repo"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"
                 >
-                  View Git hub =&gt;{"  "}
-                  <i id="jumper" className=" ri-github-line "></i>
+                  View GitHub =&gt; <FaGithub className="ml-2" />
                 </a>
               </div>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:sahdow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
-              <h3 className=" text-xl font-bold mb-2">To-Do List App</h3>
+
+            {/* Project 3 */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">To-Do List App</h3>
               <p className="text-gray-400 mb-4">
-               
+                A gamified To-Do List app that enhances productivity through
+                interactivity and rewards. Users can create, manage, and track
+                tasks in an engaging way.
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
-                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map(
-                  (item, i) => (
-                    <span
-                      key={i}
-                      className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map((item, i) => (
+                  <span
+                    key={i}
+                    className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
-
-              {/* one */}
               <div className="flex justify-between items-center">
                 <a
                   href="https://todoappiu3.netlify.app"
                   target="_blank"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 w-full"
                 >
                   View Live Demo =&gt;
                   <img
                     src={todo}
-                    alt=""
-                    className="w-[100%] py-3 rounded-3xl"
+                    alt="To-Do List App"
+                    className="w-full py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               </div>
-
-              {/* two */}
               <div className="flex justify-between items-center">
                 <a
                   href="https://github.com/Davozay/Gamified-To-Do-List-App"
                   target="_blank"
-                  className="text-red-400 hover:text-red-300 transition-colors my-4"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"
                 >
-                  View Git hub =&gt;{" "}
-                  <i id="jumper" className=" ri-github-line "></i>
+                  View GitHub =&gt; <FaGithub className="ml-2" />
                 </a>
               </div>
             </div>
-             <div className="sticky top-0 p-4 z-50">
-                      <a
-                        href="#about"
-                        className=" md:left-[394px]
-                                 md:bottom-8 lg:left-[52.5rem]
-                                  lg:bottom-14
-                                   left-5 absolute cursor-pointer angle-down z-11" >
-                        <FaAnglesUp className="text-xl" />
-          
-          
-          
-          
-                      </a>
-          
-          
-                    </div>
           </div>
-          
+
+          {/* Down Arrow */}
+          <div className="sticky bottom-0 z-50 p-4">
+            <a
+              href="#about"
+              className="absolute left-5 md:left-[394px] lg:left-[52.5rem] top-8 cursor-pointer z-10"
+            >
+            </a>
+          </div>
         </motion.div>
       </RevealOnScroll>
     </section>

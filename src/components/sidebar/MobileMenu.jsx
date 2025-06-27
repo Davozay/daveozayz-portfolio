@@ -1,6 +1,6 @@
 // import { Sidebar } from "../sidebar/Sidebar";
 
-import {  TiTimes, TiTimesOutline } from "react-icons/ti";
+import {  TiTimes } from "react-icons/ti";
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
