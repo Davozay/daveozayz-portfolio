@@ -10,6 +10,7 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 import Footer from "./components/footer/Footer";
+import { Certificate } from "./components/sections/certificate/Certificate";
 function App() {
   const [isloaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Certificate />
         <Contact />
         <Footer />
       </div>

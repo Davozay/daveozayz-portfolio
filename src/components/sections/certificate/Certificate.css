@@ -1,0 +1,53 @@
+.infinite-scroll-container {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.certificate-item {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  will-change: transform;
+}
+
+/* Pause animation on hover - because sometimes you need to stop and smell the certificates heheheehehe */
+.infinite-scroll-container:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .infinite-scroll-container {
+    animation-duration: 30s;
+  }
+  
+  .certificate-item {
+    width: 280px;
+    height: 380px;
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infinite-scroll-container {
+    animation-duration: 25s;
+  }
+  
+  .certificate-item {
+    width: 240px;
+    height: 340px;
+    padding: 16px;
+  }
+  
+
+  .absolute.w-24 {
+    width: 60px;
+  }
+}

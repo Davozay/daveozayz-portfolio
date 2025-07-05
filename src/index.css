@@ -173,6 +173,20 @@ h3 {
   }
 } */
 
+.infinite-scroll{
+  animation: sliders 60s linear infinite;
+  background: url("./assets/mainShock.jpg");
+}
+@keyframes sliders {
+  0%{
+    transform: translateX(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1920px, 0, 0);
+  }
+  
+}
+
 
 li {
   list-style: none;

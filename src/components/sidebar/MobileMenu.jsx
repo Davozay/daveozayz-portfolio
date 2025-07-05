@@ -1,5 +1,5 @@
 // import { Sidebar } from "../sidebar/Sidebar";
-
+// import PropTypes from "prop-types"
 import {  TiTimes } from "react-icons/ti";
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
@@ -67,4 +67,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     </div>
   );
 };
- 
+//  MobileMenu.prototype={
+//   menuOpen: PropTypes.bool.isRequired,
+//   setMenuOpen: PropTypes.bool.isRequired
+
+//  }
