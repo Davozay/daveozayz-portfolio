@@ -4,6 +4,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
 import bq from "../../assets/BibleQuiz.png"
+import shkh from "../../assets/shekhinah.png"
 import sent from "../../assets/sentinelle-thumbnail.png"
 const variantses = {
   initial: {
@@ -62,7 +63,7 @@ export const Projects = () => {
                 seamless registration experience via Google Form. Built using
                 HTML, TailwindCSS, and JavaScript.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2  mt-11 mb-4">
                 {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map((item, i) => (
                   <span
                     key={i}
@@ -99,13 +100,58 @@ export const Projects = () => {
               </div>
             </div>
 
+             {/* Project 5 */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">To-Do List App</h3>
+              <p className="text-gray-400 mb-4">
+                
+                A powerful website, for Shekhinah Experince, which is a community of believers that come together to edify one another in Spirit and in truth, bringing the Glory of God to the Face of The Earth. 
+                This is the official website showcasing upcoming programmmes and passed programme highlights
+              </p>
+              <div className="flex flex-wrap gap-2 mt-11 mb-4">
+                {["HTML5", "CSS3", "JavaScript"].map((item, i) => (
+                  <span
+                    key={i}
+                    className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://shekhinah-experience.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 w-full"
+                >
+                  View Live Demo =&gt;
+                  <img
+                    src={shkh}
+                    alt="To-Do List App"
+                    className="w-full py-3 rounded-3xl hover:scale-105 transition-transform duration-300"
+                  />
+                </a>
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="https://github.com/Davozay/Shekhinah-Experience"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"
+                >
+                  View GitHub =&gt; <FaGithub className="ml-2" />
+                </a>
+              </div>
+            </div>
+
             {/* Project 2 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-red-500/30 hover:shadow-[0_2px_8px_rgba(128,20,40,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Bible-Quiz Web App</h3>
               <p className="text-gray-400 mb-4">
                 This is a Bible Quiz Web Application that tests your knowledge about God{appos}s Word and helps you know more things about the Bible, and how God concealed great mysteries in His Word.
               </p>
-              <div className="flex flex-wrap gap-2 mt-11 mb-4">
+              <div className="flex flex-wrap gap-2 mt-11 mb-10">
                 {["HTML5", "CSS3", "JavaScript"].map((item, i) => (
                   <span
                     key={i}
@@ -148,7 +194,7 @@ export const Projects = () => {
                 Sentinelle is your intelligent defense tool against suspicious links, messages, and emails. Powered by real-time analysis and enhanced AI logic, this tool detects phishing, fake links, and online fraud tactics before they reach your wallet or your data.
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
-                {["HTML5", "CSS3", "JavaScript","Python"].map((item, i) => (
+                {["HTML5", "CSS3", "JavaScript", "Python"].map((item, i) => (
                   <span
                     key={i}
                     className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
@@ -228,6 +274,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+           
           </div>
 
           {/* Down Arrow */}
