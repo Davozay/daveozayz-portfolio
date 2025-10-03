@@ -107,7 +107,7 @@ export const Projects = () => {
               <p className="text-gray-400 mb-4">
 
                 This is a website simply showcasasing the International campus pastors and leaders conference.
-                A Global program held by our man of God Pastor Chris, 
+                A Global program held by our man of God Pastor Chris,
                 involving different ministers from around the world.
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
@@ -286,7 +286,7 @@ export const Projects = () => {
                 tasks in an engaging way.
               </p>
               <div className="flex flex-wrap gap-2 mt-11 mb-4">
-                {["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"].map((item, i) => (
+                {["HTML5", "CSS3", "JavaScript"].map((item, i) => (
                   <span
                     key={i}
                     className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/30 transition"
