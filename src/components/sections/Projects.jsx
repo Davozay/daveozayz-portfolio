@@ -137,7 +137,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://github.com/Davozay/Gamified-To-Do-List-App"
+                  href="https://github.com/Davozay/icplc"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-400 hover:text-red-300 transition-colors my-4 flex items-center"
